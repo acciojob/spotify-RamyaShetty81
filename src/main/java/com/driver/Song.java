@@ -5,6 +5,35 @@ public class Song {
     private int length;
     private int likes;
 
+    private  boolean isliked;
+
+    private String albumName;
+
+    public String getAlbumName() {
+        return albumName;
+    }
+
+    public void setAlbumName(String albumName) {
+        this.albumName = albumName;
+    }
+
+    public boolean isIsliked() {
+        return isliked;
+    }
+
+    public void setIsliked(boolean isliked) {
+        this.isliked = isliked;
+    }
+
+    public Song(String title, String albumName , int length) {
+        this.title = title;
+        this.length = length;
+        this.albumName = albumName;
+        this.isliked = false;
+    }
+
+
+
     public Song(){
 
     }
