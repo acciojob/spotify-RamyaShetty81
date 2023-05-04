@@ -50,7 +50,7 @@ public class SpotifyService {
                 return song;
             }
         }
-
+      return new Song();
     }
 
     public Playlist createPlaylistOnLength(String mobile, String title, int length) throws Exception {
